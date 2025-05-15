@@ -1,0 +1,63 @@
+{
+  "expo": {
+    "name": "WhatsApp Link Go",
+    "slug": "whatsapp-link-go",
+    "version": "0.0.1",
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "experiments": {
+      "tsconfigPaths": true
+    },
+    "plugins": [],
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.whatsapplinkgo",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.whatsapplinkgo",
+      "queries": [
+        {
+          "package": "com.whatsapp"
+        },
+        {
+          "intent": {
+            "action": "android.intent.action.VIEW",
+            "data": {
+              "scheme": "whatsapp"
+            }
+          }
+        },
+        {
+          "intent": {
+            "action": "android.intent.action.SENDTO",
+            "data": {
+              "scheme": "sms"
+            }
+          }
+        }
+      ]
+    },
+    "extra": {
+      "eas": {
+        "projectId": "6db6cfd7-1a41-40ee-aab9-94b445a7cc0e"
+      }
+    }
+  }
+}
